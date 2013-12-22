@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Welcome to my new site!"
+date:   2013-12-22 14:44:00
+categories: blog
+---
+
+Firstly thanks for stopping by! I had wanted to create a personal site for a while and after reading this [post][ryan-seys] by 
+Ryan Seys I finally bit the bullet. The main reason for building the site is so that I can use it as a tool to record what I have learnt, hopefully improve my [written communication skills][theblog] and show case the [projects][projects] that I have been working.
+
+For the technically inclined, after initially looking at tumblr but unable to justify the time it would take to incorporate the feed into another site and remembering how overly complex word press was for what should be a simple blogging platform I decided to go with [Jekyll][jekyll].
+Jekyll is a very simple framework that parses plain text files to generate content rather than needing a database to store posts. It also just so happens that [github][githubpages] runs on the Jekyll engine and will host your Jekyll site for free. To see just how simple the frame work is you can see the repository for this site [here][repo].
+
+[ryan-seys]: https://ryanseys.com/blog/using-jekyll
+[jekyll]:    http://jekyllrb.com
+[repo]:      https://github.com/brent-p/brent-p.github.io 
+[projects]:  /projects.html
+[theblog]:     /blog.html
+[githubpages]: http://pages.github.com/
