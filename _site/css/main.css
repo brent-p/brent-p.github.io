@@ -261,3 +261,15 @@ footer {
     color:#444;
   }
 }
+
+.heading {
+  display:inline-block;
+}
+
+#headingicon {
+  width:30px; /* you can use % */
+  height: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
