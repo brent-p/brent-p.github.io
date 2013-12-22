@@ -81,10 +81,7 @@ th, td {
   padding:5px 10px;
   border-bottom:1px solid #e5e5e5;
 }
-.extra {
-  float: right;
-  padding-right: 2px;
-}
+
 
 .post-date{
   float: right;
@@ -104,7 +101,7 @@ img {
 }
 
 header {
-  width:270px;
+  /*width:270px;*/
   float:right;
   position:fixed;
 }
@@ -182,6 +179,13 @@ hr {
   background:#e5e5e5;
   height:1px;
   margin:0 0 20px;
+}
+
+.hr-thick {
+  border:0;
+  background:#000000;
+  height:2px;
+  margin:0 0 0 0px; 
 }
 
 footer {
@@ -263,13 +267,66 @@ footer {
 }
 
 .heading {
-  display:inline-block;
+  /*display:inline-block;*/
+  position: fixed;
+  top: 8px;
+  color: #444;
+  /*text-transform: uppercase;*/
+  margin-left: 50px;
+  /*//font-family: 'Roboto Slab';*/
+  font-weight: 400;
+  font-size: 14pt;
 }
 
 #headingicon {
   width:30px; /* you can use % */
-  height: auto;
+  /*height: auto;*/
+  top: 8px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  position: fixed;
+  top: 8px;
+  /*padding-right: 10px;*/
+}
+
+.inline {
+  display:inline-block;
+  padding-right: 10px;
+}
+
+.block {
+  display:block;
+}
+
+.bg{
+  position: fixed;
+  top: 0;
+  right: -50%;
+  left: -50%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 46px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.stupid-container {
+  /*position: fixed;*/
+  /*top: 8px;*/
+  float: right;
+  width: 150px;
+  /*display:inline-block;*/
+  /*padding-right: 2px;*/
+
+}
+
+.stupidheader{
+  display:block;
+}
+
+.nav-links{
+  position: fixed;
+  top: 8px;
+  float: right;
 }

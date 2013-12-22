@@ -7,8 +7,11 @@ title: Brent Parish
   <!-- <h1>Latest</h1> -->
   <!--<ul class="posts">-->
     {% for post in site.posts %}
-      <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date_to_string }}</span>
-      {{ post.excerpt }}
+      <div class="block">
+      	<a href="{{ post.url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date_to_string }}</span>
+      	{{ post.excerpt }}<a href="{{ post.url }}">More</a> 
+      </div>
+      <hr>
     {% endfor %}
  <!-- </ul>-->
 </div>
