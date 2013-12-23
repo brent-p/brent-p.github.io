@@ -311,7 +311,7 @@ footer {
   background-color: white;
 }
 
-.stupid-container {
+.nav-container {
   /*position: fixed;*/
   /*top: 8px;*/
   float: right;
@@ -321,7 +321,7 @@ footer {
 
 }
 
-.stupidheader{
+.nav-header{
   display:block;
 }
 
