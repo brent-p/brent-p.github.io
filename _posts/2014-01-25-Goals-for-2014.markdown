@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Goals for 2014"
+date:   2014-01-25 17:00:00
+categories: blog
+---
+
+I made a pack with myself that I would aim to write at least one blog post a month but first month in and I am already struggling! So I have decided to kick off blogging for the year with somthing easy, listing off my goals for 2014.
+
+So starting off:
+
+1) Write some words about some things on my website at least once a month maybe even 2 times if I am feeling adventurous, probably not 3 times because that would be just showing off.
+
+2) Finish off phase 2 of Much.ly with Dave you can see our progress here on our trello board [here][trello].
+
+3) Finish off multi platform rewrite of DiamondRun
+
+4) Complete another year of my CS degree
+
+5) Code as much as possible
+
+6) Get in a whole bunch of bicycle cycling in.
+
+Short and sweet post for today but hopefully it will get the blog ball rolling.
+
+[trello]: https://trello.com/b/n6yvURPN 
