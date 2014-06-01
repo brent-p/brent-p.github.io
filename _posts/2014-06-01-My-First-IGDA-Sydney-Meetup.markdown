@@ -51,6 +51,6 @@ This may be a bit unrealistic but I would love to submit something in the studen
 
 <img src="/assets/Up_There_in_game_project.png" />
 
-
+[build]:{% post_url 2014-05-30-Up-There %}
 [igda_twitter]:https://twitter.com/IGDA_Sydney
 [igda_meetup]:http://www.meetup.com/igda-sydney/
