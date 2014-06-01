@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Up There(Working Title)"
+date:   2014-05-31 17:00:00
+categories: projects
+---
+
+<div>
+<h3 class="inline">Platform:</h3> 
+<p class="inline">Linux/Mac/Windows</p>
+<h3 class="inline">Download:</h3>
+<a class="inline" href="https://dl.dropboxusercontent.com/u/7913669/Up_There.jar"> Up_There.jar</a>
+<p clas="inline"> Currently still in development, Up There is a retro adventure agame inspired by games like the original zelda with a focus on exploration.</p>
+
+<h3>Development</h3>
+<p>Up There has been built using Java using the Libgdx framework.</p>
+
+<h3 >Controls:</h3>
+<p>Arrow keys for movement, Space Bar for attack. Should support latest xbox 360 controller, left joystick for movement, A to attack, B to dash.</p>
+<img src="/assets/Up_There_in_game_project.png" />
+</div>
+
+[libgdx]: http://libgdx.badlogicgames.com/

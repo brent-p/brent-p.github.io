@@ -1,31 +1,56 @@
 ---
 layout: post
 title:  "My First IGDA Sydney Meetup, impressions and things I learnt."
-date:   2014-05-31 17:00:00
+date:   2014-06-01 17:00:00
 categories: blog
 ---
 
-Recently I managed to attended my first Sydney IGDA meetup<p/>
+<h3>IGDA Sydney Impressions:</h3>
+Recently I managed to attend my first [Sydney IGDA meetup][igda_meetup] and I had a fantastic time, met alot of people and learnt alot.
 
-wanted to attend for a while, when I first founnd out about IGDA a meetup happend the day before, then I was unable to attend because I had a uni exam the next day. Managed to convince my friend the day before to drive to sydney with me from newcastle. 
+I have wanted to go ever since I had found out about [IGDA sydney][igda_twitter] but due to ill timed uni exams I so far had not been able to make it. After I saw a reminder pop up in my Twitter feed I managed to convince my friend the day before to come along for the 2 and half hour drive to sydney with me. 
 
-Decided the night before > so had to quickly got a build together the night before.
+Driving up I had no real idea of what the event would be like, would it just be a couple of friends hanging out? or a more formal event with a schedule and speakers? Looking at the amount of people who had rsvped to the [meetup page][igda_meetup] and guessing that most people wouldnt rsvp(like myself) I guessed their would be a fair amount people turning up.
 
-Had kind of given up on the game as scope might be too big
+So far only close friends had played my game([you can download it here][build]) as its really just a prototype. I wasn't really expecting to demo my game but I thought I would bring my laptop and contoller along just in case but even then I didn't think anyone would play it.
 
-Want to submit something in the student igf
+Boy was I wrong! Despite my simple game I had a constant stream of people taking the time to introduce themselves and trying it out. By the time I got a chance to eat my dinner it had already gone cold. Everyone was super friendly and had lots of useful feedback to share that I'll be sure to implement when I get the chance. Watching people play something you have made no matter how simple is by far the best feeling and a massive motivator.
 
-Everyone was super friendly and willing to take the time to give me adivce and feed back
+Overall it was a great experience that I would recommend to anyone who is working on a game to meet like minded people and get valuable feedback. The atmosphere was relaxed and while I dont really know if everyone was with the meet up I'm guessing about 50-60 people turned up on the night.
 
-learnt lots of things
-most are pretty obvious but didnt really think about as only decided to go the day before, plus I didnt really expect anyone to play my game
-	- Need an easy reset button so easy to setup the game for the next player
-	- Need to show/explain what the controls are
-	- Need basic business cards with contact details
-	- Notepad to write down observations,ideas,feedback and other peoples contact details
-	- hadnt spent anytime on placeholder are but other people commented that they liked the simple style, so maybe i can embrace this
+<h3>What I learnt:</h3>
+Most of these things that in hindsight seem obvious but because I really only decided to go the day before I was a bit unprepeared.
+
+<ul>
+	<li>
+		Bring a Note pad! This is something really simple that I wish I had brought to write down observations, ideas, feedback and other peoples contact details to catch up with later.		
+	</li>
+	<li>
+		Watching other people play your game is a super eye opening experince and things you take for granted or don't see as a big deal can be a big thing to the player.
+	</li>
+	<li>
+		I didn't make a build with demoing it in mind but for next time, having a simple button to reset the game for next player would of saved me from fumbling about in the IDE while the player is waiting.
+	</li>
+	<li>
+		I noticed one of the other games had a sign showing the controls so I hope to steal that idea for next time. So the player can just pick up and play.
+	</li>
+	<li>
+		Having some simple business cards to hand out with name, email, twitter handle so that its easy to catch up with people after the event, I met so many people that struggle to remember peoples names so I'm guessing they have probably forgot mine too.
+	</li>
+
+	<li>
+		 I hadnt spent anytime on placeholder art but other people commented that they liked the simple style, so maybe I can embrace this
+	</li>
+</ul>
 
 
+<h3>Looking for a student artist!</h3>
+This may be a bit unrealistic but I would love to submit something in the student IGF so if your an artist and currently a student or know of some one who is, send me an email hello@brentparish.com and get in touch I would love to chat. 
 
-<img src="/assets/pixelart.png" />
+<h3 class="inline">Get the Game Here:</h3>[Download][build]
 
+<img src="/assets/Up_There_in_game_project.png" />
+
+[build]:{% post_url 2014-05-31-Up-There %}
+[igda_twitter]:https://twitter.com/IGDA_Sydney
+[igda_meetup]:http://www.meetup.com/igda-sydney/
