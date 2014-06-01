@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My First IGDA Sydney Meetup, impressions and things I learnt."
+title:  "My First IGDA Sydney Meetup, Impressions and Things I Learnt"
 date:   2014-06-01 17:00:00
 categories: blog
 ---
