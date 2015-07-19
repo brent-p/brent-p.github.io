@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Seek"
+date:   2015-07-18 17:00:00
+categories: projects
+---
+
+<div>
+<h3 class="inline">Platform:</h3> 
+<p class="inline">Linux/Mac/Windows</p>
+<p clas="inline"> My current side project, Seek is a 2d exploration/adventure platformer</p>
+
+<h3>Development</h3>
+Seek has been built using Java using the <a class="inline" href="http://libgdx.badlogicgames.com/">Libgdx</a> framework.
+<img src="/assets/seek.png" />
+</div>
