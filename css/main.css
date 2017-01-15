@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
+  /*padding:50px;*/
+  padding: 0px;
+  margin: 0px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300; 
@@ -9,6 +11,8 @@ body {
 
 .content{
   max-width:800px;
+  padding-left: 50px;
+  margin-top: 10px;
 }
 .post{
   
@@ -274,27 +278,31 @@ footer {
 }
 
 .heading {
-  /*display:inline-block;*/
-  position: fixed;
+  display:inline-block;
+ /* position: fixed;*/
+  /*display: inline;*/
   top: 8px;
   color: #444;
   /*text-transform: uppercase;*/
-  margin-left: 50px;
+  margin-left: 10px;
   /*//font-family: 'Roboto Slab';*/
   font-weight: 400;
   font-size: 14pt;
+  vertical-align: text-bottom;
+
 }
 
-#headingicon {
+.heading-icon {
   width:30px; /* you can use % */
-  /*height: auto;*/
-  top: 8px;
+  /*height: auto;
+  top: 8px;*/
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  position: fixed;
-  top: 8px;
-  /*padding-right: 10px;*/
+  /*position: fixed;
+  top: 8px;*/
+  /*margin-left: 10px;*/
+  /*margin-top:8px;*/
 }
 
 .inline {
@@ -306,7 +314,7 @@ footer {
   display:block;
 }
 
-.bg{
+/*.bg{
   position: fixed;
   top: 0;
   right: -50%;
@@ -316,16 +324,16 @@ footer {
   height: 46px;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   background-color: white;
-}
+}*/
 
 .nav-container {
   /*position: fixed;*/
   /*top: 8px;*/
   float: right;
   width: 150px;
+  margin-top: 10px;
   /*display:inline-block;*/
   /*padding-right: 2px;*/
-
 }
 
 .nav-header{
@@ -333,7 +341,18 @@ footer {
 }
 
 .nav-links{
-  position: fixed;
+ /* position: fixed;
   top: 8px;
-  float: right;
+  float: right;*/
+}
+
+.nav-bar{
+  left: 0px;
+  right: 0;
+  height: 38px;
+  margin-top: 8px;
+  /*position: fixed;*/
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-left: 10px;
 }

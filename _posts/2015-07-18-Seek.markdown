@@ -8,9 +8,12 @@ categories: projects
 <div>
 <h3 class="inline">Platform:</h3> 
 <p class="inline">Linux/Mac/Windows</p>
-<p clas="inline"> My current side project, Seek is a 2d exploration/adventure platformer</p>
+<p clas="inline">Seek is a 2d exploration/adventure platformer</p>
 
 <h3>Development</h3>
 Seek has been built using Java using the <a class="inline" href="http://libgdx.badlogicgames.com/">Libgdx</a> framework.
-<img src="/assets/seek.png" />
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Let there be water! <a href="http://t.co/nDuiWArBOv">pic.twitter.com/nDuiWArBOv</a></p>&mdash; Brent Parish (@BrentParish) <a href="https://twitter.com/BrentParish/status/631641181651251200">August 13, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Seek, now with 100% more sitting! <a href="https://twitter.com/hashtag/gamedev?src=hash">#gamedev</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash">#screenshotsaturday</a> <a href="http://t.co/CtsIKAARBG">pic.twitter.com/CtsIKAARBG</a></p>&mdash; Brent Parish (@BrentParish) <a href="https://twitter.com/BrentParish/status/632860972579815424">August 16, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>

@@ -15,57 +15,43 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="http://www.iconj.com/ico/0/b/0btl359nsg.ico" type="image/x-icon" />
 
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-47111069-1', 'brentparish.com');
-  ga('send', 'pageview');
-
-</script>
-
     </head>
     <body>
         <div class="site">
           <div class="nav-bar">
-            <div class="bg"></div>
             <div class="nav-header">
-              <img id="headingicon" src="http://s.gravatar.com/avatar/1fb8f39c4f868a8c1f8b66a9c05e8d01?s=80"/> 
-              <a class="heading" href="/">Brent Parish</a>
+              <img class="heading-icon" src="http://s.gravatar.com/avatar/1fb8f39c4f868a8c1f8b66a9c05e8d01?s=80"/>
+                  <span><a class="heading" href="/">Brent Parish</a></span>
               <div class="nav-container">
                   <div class="nav-links">
-                    <a class="navlinks" href="/">home</a>
-                    <a class="navlinks" href="/about.html">about</a>
-                    <a class="navlinks" href="/blog.html">blog</a>
-                    <a class="navlinks" href="/projects.html">projects</a>
+                    <a class="navlinks" href="/about.html">about</a> | 
+                    <a class="navlinks" href="/">blog</a>                    
                   </div>
               </div>
             </div>
           </div>
           <div class="content">
             <h2>Find and Replace Strings in Ruby using Regular Expressions</h2>
-<p class="meta">28 Feb 2014</p>
+<p class="meta">01 Mar 2014</p>
 
 <div class="post">
 <p>I have been working hard recently to get the next phase of Muchly(a complete rewrite from Java to Ruby as well as lots of new functionality) ready to be released on our much.ly domain and one of the things I have been putting off is parsing posts for hashtags and urls and turning them into links. For example, in a tweet if &quot;#food&quot; appears I want to turn this into <code>&lt;a href=&quot;\search\food&quot;&gt;food&lt;/a&gt;</code> but if a url appears e.g. http://t.co I want to turn this into <code>&lt;a href=&quot;http://t.co&quot;&gt; http://t.co&lt;/a&gt;</code>. e.g.<br/>
 <img src="/assets/post.png" /></p>
 
 <p>So today I finally decided to tackle this task, last time in Java I looped through the string manually finding and replacing using substrings where this time in Ruby I want to try and see if I can accomplish the same thing using regular expressions. As it turns out this is actually really easy in Ruby however I wasn&#39;t able to find a full example in so I decided I would post one of my own.</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">#Replace all Hashtags in text with links to /search/hashtag
+<div class="highlight"><pre><code class="language-text" data-lang="text">#Replace all Hashtags in text with links to /search/hashtag
 new_text = old_text.gsub(/#[a-zA-Z0-9]*/) do |match|
     &quot;&lt;a href=&#39;\/search\/#{match[1..-1]}&#39;&gt;#{match}&lt;/a&gt;&quot;
 end
 </code></pre></div>
 <p>For input:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">old_text = &quot;#fun some more words #photo#day&quot;
+<div class="highlight"><pre><code class="language-text" data-lang="text">old_text = &quot;#fun some more words #photo#day&quot;
 </code></pre></div>
 <p>The output would be:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">new_text = &quot;&lt;a href=&#39;search/fun&#39;&gt;#fun&lt;/a&gt; some more words &lt;a href=&#39;search/photo&#39;&gt;#photo&lt;/a&gt;&lt;a href=&#39;search/day&#39;&gt;#day&lt;/a&gt;&quot;
+<div class="highlight"><pre><code class="language-text" data-lang="text">new_text = &quot;&lt;a href=&#39;search/fun&#39;&gt;#fun&lt;/a&gt; some more words &lt;a href=&#39;search/photo&#39;&gt;#photo&lt;/a&gt;&lt;a href=&#39;search/day&#39;&gt;#day&lt;/a&gt;&quot;
 </code></pre></div>
 <p>The gsub method on string replaces all occurrences that match the regular expression, while the sub method will only replace the first occurence.</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">  #Regular expression definitions:
+<div class="highlight"><pre><code class="language-text" data-lang="text">  #Regular expression definitions:
   # - anything between / and / is treated as a regular expression
   # - # match a single # character
   # - [a-zA-Z0-9] match any character that is either a-z, A-Z, or 0 - 9 i.e any letter or number
@@ -75,16 +61,16 @@ end
   # the string so &quot;#hashtag&quot;[1..-1] would return &quot;hashtag&quot; i.e without the # symbol
 </code></pre></div>
 <p>To parse for urls I did the following:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text"> #Replace all links that start with http: or www. with link tags
+<div class="highlight"><pre><code class="language-text" data-lang="text"> #Replace all links that start with http: or www. with link tags
  new_text = new_text.gsub(/(http:|www.)[a-zA-Z0-9\/:\.\?]*/) do |match|
  &quot;&lt;a href=&#39;#{match}&#39;&gt;#{match}&lt;/a&gt;&quot;
  end
 </code></pre></div>
 <p>For input:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text"> old_text = &quot;Apple to discuss misleading free-to-play apps http://t.co/ktovN7NlEa&quot;
+<div class="highlight"><pre><code class="language-text" data-lang="text"> old_text = &quot;Apple to discuss misleading free-to-play apps http://t.co/ktovN7NlEa&quot;
 </code></pre></div>
 <p>The output would be:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">new_text = &quot;Apple to discuss misleading free-to-play apps &lt;a href=&#39;http://t.co/ktovN7NlEa&#39;&gt;http://t.co/ktovN7NlEa&#39;&lt;/a&gt;&quot;   
+<div class="highlight"><pre><code class="language-text" data-lang="text">new_text = &quot;Apple to discuss misleading free-to-play apps &lt;a href=&#39;http://t.co/ktovN7NlEa&#39;&gt;http://t.co/ktovN7NlEa&#39;&lt;/a&gt;&quot;   
 </code></pre></div>
 <p>Now I am sure you can probably get a bit fancier and catch some other cases but for first pass this will be sufficient for now. I hope this helps, if you have any questions you can contact me via the details below.      </p>
 
@@ -93,17 +79,14 @@ end
           </div>
           <div class="footer">
             <hr class="hr-thick">
-            <!-- <div class="contact"> -->
-              <!-- <p> -->
-                Hi I'm Brent Parish,
-                a passionate developer from Australia.                
-              <!-- </p> -->
+             
             </div>
             <div class="contact">
               <p>                                
-                You can contact me at:<a href="mailto:hello@brentparish.com">
- hello@brentparish.com</a>, follow me on <a href="https://twitter.com/brentparish">twitter</a>
-                or see what I have been up to on <a href="https://github.com/brent-p">github</a>.
+                Contact:<a href="mailto:hello@brentparish.com">
+		  hello@brentparish.com</a> |
+		<a href="https://twitter.com/brentparish">twitter</a> | 
+                <a href="https://github.com/brent-p">github</a>
               </p>
             </div>
           </div>

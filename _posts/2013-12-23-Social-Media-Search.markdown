@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Muchly phase 2"
+title:  "Muchly: Social Media Search"
 date:   2013-12-23 21:27:32
 categories: projects
 ---
@@ -10,7 +10,7 @@ categories: projects
 <p class="inline">Ruby </p>
 <h3 class="inline">Url:</h3>
 <a class="inline" href="http://secure-dusk-4761.herokuapp.com/"> http://secure-dusk-4761.herokuapp.com/</a>
-<p clas="inline"> Currently still in development, this version of Muchly allows you to view your Twitter and Instagram timelines in one feed and also search for hastags across Twitter and Instagram.</p>
+<p clas="inline"> Muchly is a tool that allows you to search across social media applications twitter and instagram.</p>
 <img src="/assets/MuchlyPhase2.png" />
 </div>
 
